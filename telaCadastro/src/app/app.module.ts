@@ -7,7 +7,6 @@ import { FirstScreenComponent } from './first-screen/first-screen.component';
 import { ConsultScheduleComponent } from './consult-schedule/consult-schedule.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { RestrictedAccessComponent } from './restricted-access/restricted-access.component';
-import { RestrictedAccesspatientComponent } from './restricted-accesspatient/restricted-accesspatient.component';
 import { RestrictedAccessPatientComponent } from './restricted-access-patient/restricted-access-patient.component';
 import { RestrictedAccessProfessionalComponent } from './restricted-access-professional/restricted-access-professional.component';
 import { RestrictedAccessConsultComponent } from './restricted-access-consult/restricted-access-consult.component';
@@ -19,7 +18,6 @@ import { RestrictedAccessConsultComponent } from './restricted-access-consult/re
     ConsultScheduleComponent,
     ScheduleComponent,
     RestrictedAccessComponent,
-    RestrictedAccesspatientComponent,
     RestrictedAccessPatientComponent,
     RestrictedAccessProfessionalComponent,
     RestrictedAccessConsultComponent
