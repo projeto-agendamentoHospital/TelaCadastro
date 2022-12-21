@@ -1,1 +1,106 @@
-<p>cadastrar beneficiario</p>
+<div class="full-banner-form">
+  <form action="" method="post">
+    <h1>Cadastrar Beneficiário</h1>
+    <div class="container">
+      <div class="mb-3 row">
+        <label for="nomeAluno" class="col-sm-4 col-form-label"
+          >Nome do Beneficiário</label
+        >
+        <div class="col-sm-6">
+          <input
+            type="text"
+            class="form-control"
+            id="nomeBeneficiario"
+            [(ngModel)]="beneficiario.nome"
+            name="nome"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="nomeAluno" class="col-sm-4 col-form-label">CPF</label>
+        <div class="col-sm-6">
+          <input
+            type="text"
+            class="form-control"
+            id="nomeBeneficiario"
+            [(ngModel)]="beneficiario.cpf"
+            name="cpf"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="nomeAluno" class="col-sm-4 col-form-label">Telefone</label>
+        <div class="col-sm-6">
+          <input
+            type="text"
+            class="form-control"
+            id="nomeBeneficiario"
+            [(ngModel)]="beneficiario.tel"
+            name="tel"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="nomeAluno" class="col-sm-4 col-form-label">Endereço</label>
+        <div class="col-sm-6">
+          <input
+            type="text"
+            class="form-control"
+            id="nomeBeneficiario"
+            [(ngModel)]="beneficiario.endereco"
+            name="endereco"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="nomeAluno" class="col-sm-4 col-form-label"
+          >Número da Carteirinha</label
+        >
+        <div class="col-sm-6">
+          <input
+            type="text"
+            class="form-control"
+            id="nomeBeneficiario"
+            [(ngModel)]="beneficiario.numeroCarteirinha"
+            name="numeroCarteirinha"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="nomeAluno" class="col-sm-4 col-form-label">Email</label>
+        <div class="col-sm-6">
+          <input
+            type="text"
+            class="form-control"
+            id="nomeBeneficiario"
+            [(ngModel)]="beneficiario.email"
+            name="endereco"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="nomeAluno" class="col-sm-4 col-form-label">Senha</label>
+        <div class="col-sm-6">
+          <input
+            type="password"
+            class="form-control"
+            id="nomeBeneficiario"
+            [(ngModel)]="beneficiario.senha"
+            name="endereco"
+          />
+        </div>
+      </div>
+      <div class="row-2 col-sm-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          [(ngModel)]="beneficiario.ativo"
+          name="ativo">
+          <option value="1" value="true">Ativo</option>
+          <option value="2" value="false">Inativo</option>
+        </select>
+      </div>
+        <button (click)="salvar()">Salvar</button>
+    </div>
+  </form>
+</div>
