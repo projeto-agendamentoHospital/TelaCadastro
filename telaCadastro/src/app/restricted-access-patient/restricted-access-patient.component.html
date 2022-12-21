@@ -1,106 +1,106 @@
 <div class="full-banner-form">
-  <form action="" method="post">
+  <form action="" method="post" #frmCreate="ngForm" (ngSubmit)="toCreate(frmCreate)">
     <h1>Cadastrar Beneficiário</h1>
     <div class="container">
       <div class="mb-3 row">
-        <label for="nomeAluno" class="col-sm-4 col-form-label"
+        <label class="col-sm-4 col-form-label"
           >Nome do Beneficiário</label
         >
         <div class="col-sm-6">
           <input
             type="text"
             class="form-control"
-            id="nomeBeneficiario"
-            [(ngModel)]="beneficiario.nome"
-            name="nome"
+            id="name"
+            [(ngModel)]="setting.name"
+            name="name"
           />
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="nomeAluno" class="col-sm-4 col-form-label">CPF</label>
+        <label class="col-sm-4 col-form-label">CPF</label>
         <div class="col-sm-6">
           <input
             type="text"
             class="form-control"
-            id="nomeBeneficiario"
-            [(ngModel)]="beneficiario.cpf"
+            id="cpf"
+            [(ngModel)]="setting.cpf"
             name="cpf"
           />
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="nomeAluno" class="col-sm-4 col-form-label">Telefone</label>
+        <label class="col-sm-4 col-form-label">Telefone</label>
         <div class="col-sm-6">
           <input
             type="text"
             class="form-control"
-            id="nomeBeneficiario"
-            [(ngModel)]="beneficiario.tel"
-            name="tel"
+            id="phone"
+            [(ngModel)]="setting.phone"
+            name="phone"
           />
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="nomeAluno" class="col-sm-4 col-form-label">Endereço</label>
+        <label class="col-sm-4 col-form-label">Endereço</label>
         <div class="col-sm-6">
           <input
             type="text"
             class="form-control"
-            id="nomeBeneficiario"
-            [(ngModel)]="beneficiario.endereco"
-            name="endereco"
+            id="address"
+            [(ngModel)]="setting.address"
+            name="address"
           />
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="nomeAluno" class="col-sm-4 col-form-label"
+        <label class="col-sm-4 col-form-label"
           >Número da Carteirinha</label
         >
         <div class="col-sm-6">
           <input
             type="text"
             class="form-control"
-            id="nomeBeneficiario"
-            [(ngModel)]="beneficiario.numeroCarteirinha"
-            name="numeroCarteirinha"
+            id="numberCard"
+            [(ngModel)]="setting.numberCard"
+            name="numberCard"
           />
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="nomeAluno" class="col-sm-4 col-form-label">Email</label>
+        <label class="col-sm-4 col-form-label">Email</label>
         <div class="col-sm-6">
           <input
             type="text"
             class="form-control"
-            id="nomeBeneficiario"
-            [(ngModel)]="beneficiario.email"
-            name="endereco"
+            id="email"
+            [(ngModel)]="setting.email"
+            name="email"
           />
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="nomeAluno" class="col-sm-4 col-form-label">Senha</label>
+        <label class="col-sm-4 col-form-label">Senha</label>
         <div class="col-sm-6">
           <input
             type="password"
             class="form-control"
-            id="nomeBeneficiario"
-            [(ngModel)]="beneficiario.senha"
-            name="endereco"
+            id="password"
+            [(ngModel)]="setting.password"
+            name="password"
           />
         </div>
       </div>
       <div class="row-2 col-sm-2">
-        <select
+        <!-- <select
           class="form-select"
           aria-label="Default select example"
-          [(ngModel)]="beneficiario.ativo"
-          name="ativo">
-          <option value="1" value="true">Ativo</option>
-          <option value="2" value="false">Inativo</option>
-        </select>
+          [(ngModel)]="setting.active"
+          name="active">
+          <option value="true">Ativo</option>
+          <option value="false">Inativo</option>
+        </select> -->
       </div>
-        <button (click)="salvar()">Salvar</button>
+        <button [disabled]="frmCreate.invalid">Salvar</button>
     </div>
   </form>
 </div>
