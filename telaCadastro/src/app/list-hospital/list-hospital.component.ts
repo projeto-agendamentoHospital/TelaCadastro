@@ -53,7 +53,7 @@ export class ListHospitalComponent {
       });
   }
 
-  edit(id: string) {
+  editHospital(id: string) {
     this.router.navigate([`https://localhost:7144/Hospital/${id}`]);
   }
 
