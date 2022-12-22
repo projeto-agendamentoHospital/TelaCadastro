@@ -16,6 +16,7 @@ import { RestrictedAccessConsultComponent } from './restricted-access-consult/re
 import { CreateHospitalComponent } from './create-hospital/create-hospital.component';
 import { CreateSettingComponent } from './create-setting/create-setting.component';
 import { CreateSpecialtyComponent } from './create-specialty/create-specialty.component';
+import { ListHospitalComponent } from './list-hospital/list-hospital.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { CreateSpecialtyComponent } from './create-specialty/create-specialty.co
     CreateHospitalComponent,
     CreateSettingComponent,
     CreateSpecialtyComponent,
+    ListHospitalComponent,
 
   ],
   imports: [

@@ -9,14 +9,14 @@
         <ng-template ngbPanelContent>
           <div class="container botoes">
             <button type="button" class="btn btn-primary btn-lg">
-              <a routerLink="/inicio/acessoRestrito/cadastrarHospital" class="link" routerLink="/inicio/acessoRestrito/consultar/cadastrarHospital"> Cadastrar Hospital</a>
+              <a routerLink="/inicio/acessoRestrito/cadastrarHospital" class="link" routerLink="/inicio/acessoRestrito/cadastrarHospital"> Cadastrar Hospital</a>
             </button>
-            <button type="button" class="btn btn-primary btn-lg">
+            <button type="button" class="btn btn-primary btn-lg" routerLink="/inicio/acessoRestrito/cadastrarEspecialidade">
               <a routerLink="/inicio/acessoRestrito/cadastrarEspecialidade" class="link"
                 >Cadastrar Especialidade</a
               >
             </button>
-            <button type="button" class="btn btn-primary btn-lg">
+            <button type="button" class="btn btn-primary btn-lg" routerLink="/inicio/consultarAgendamento">
               <a routerLink="/inicio/consultarAgendamento" class="link"
                 >Cadastrar Médico</a
               >
@@ -39,8 +39,8 @@
   <ngb-panel title="Listar">
     <ng-template ngbPanelContent>
       <div class="container botoes">
-        <button type="button" class="btn btn-primary btn-lg">
-          <a routerLink="/inicio/agendar" class="link" routerLink="/inicio/consultarAgendamento">Listar Hospital</a>
+        <button type="button" class="btn btn-primary btn-lg" routerLink="/inicio/acessoRestrito/listarHospital">
+          <a class="link" routerLink="/inicio/acessoRestrito/listarHospital">Listar Hospital</a>
         </button>
         <button type="button" class="btn btn-primary btn-lg">
           <a routerLink="/inicio/consultarAgendamento" class="link"
