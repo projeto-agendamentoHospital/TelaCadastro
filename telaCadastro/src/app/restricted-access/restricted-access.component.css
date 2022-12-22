@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&family=Ultra&display=swap');
 
 .first{
+  display: flex;
   background-color: rgb(38, 28, 16);
   background-image: url(../img/fundo2.webp);
   font-family:'Raleway', sans-serif;
@@ -11,20 +12,23 @@
   background-size: cover;
 }
 .form{
-  align-content: center;
+  justify-content: space-around;
+  align-content: space-around;
   background: #2b150ba6 ;
-  width: 80%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
   border-radius: 3%;
   padding: 5px;
 }
 h1{
-  padding-top: 235px;
+  padding-top: 135px;
   padding-bottom: 95px;
   text-align: center;
   font-size: 55px;
   font-weight: 800;
-  color: rgb(0, 0, 0);
+  color: rgb(252, 248, 248);
   font-family: 'Ultra', serif;
 }
 button{
@@ -33,7 +37,7 @@ button{
   background-color: rgba(255, 235, 205, 0.5);
 }
 button:hover{
-  background-color: rgb(239, 183, 98);
+  background-color: rgba(239, 183, 98, 0.5);
   box-shadow: 0px 0px 0px 2px rgb(63, 62, 62);
 }
 

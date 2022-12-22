@@ -1,11 +1,14 @@
 <div class="full-banner-form">
-  <form action="" method="post" #frmCreate="ngForm" (ngSubmit)="toCreate(frmCreate)">
+  <form
+    action=""
+    method="post"
+    #frmCreate="ngForm"
+    (ngSubmit)="toCreate(frmCreate)"
+  >
     <h1>Cadastrar Beneficiário</h1>
     <div class="container">
       <div class="mb-3 row">
-        <label class="col-sm-4 col-form-label"
-          >Nome do Beneficiário</label
-        >
+        <label class="col-sm-4 col-form-label">Nome do Beneficiário</label>
         <div class="col-sm-6">
           <input
             type="text"
@@ -53,9 +56,7 @@
         </div>
       </div>
       <div class="mb-3 row">
-        <label class="col-sm-4 col-form-label"
-          >Número da Carteirinha</label
-        >
+        <label class="col-sm-4 col-form-label">Número da Carteirinha</label>
         <div class="col-sm-6">
           <input
             type="text"
@@ -91,16 +92,19 @@
         </div>
       </div>
       <div class="row-2 col-sm-2">
-        <!-- <select
-          class="form-select"
-          aria-label="Default select example"
-          [(ngModel)]="setting.active"
-          name="active">
-          <option value="true">Ativo</option>
-          <option value="false">Inativo</option>
-        </select> -->
+        <div class="form-check d-flex mb-4">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            value="true"
+            id="ativo"
+            checked
+            [ngModelOptions]="{ standalone: true }"
+            [(ngModel)]="setting.ativo"/>
+          <label class="form-check-label" for="ativo"> Ativo </label>
+        </div>
       </div>
-        <button [disabled]="frmCreate.invalid">Salvar</button>
+      <button [disabled]="frmCreate.invalid">Salvar</button>
     </div>
   </form>
 </div>
