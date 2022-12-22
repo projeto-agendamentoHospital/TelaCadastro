@@ -1,0 +1,76 @@
+<section class="intro full-banner-form">
+  <div>
+    <div class="mask d-flex align-items-center h-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1 class="mb-5 text-center">Cadastrar Especialidade</h1>
+          <div class="col-12 col-lg-10">
+            <div class="card form">
+              <div class="card-body">
+                <form
+                  action=""
+                  method="post"
+                  #frmCreate="ngForm"
+                  (ngSubmit)="toCreate(frmCreate)"
+                >
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="nomeSpecialty"
+                          >Nome Especialidade</label
+                        >
+                        <input
+                          type="text"
+                          id="nomeSpecialty"
+                          name="nomeSpecialty"
+                          class="form-control"
+                          [(ngModel)]="specialty.nome"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="cnpjSpecialty"
+                          >Descrição</label
+                        >
+                        <input
+                          type="text"
+                          id="descricaoSpecialty"
+                          name="descricaoSpecialty"
+                          class="form-control"
+                          [(ngModel)]="specialty.descricao"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check d-flex mb-4">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      value="true"
+                      id="ativo"
+                      checked
+                      [ngModelOptions]="{ standalone: true }"
+                      [(ngModel)]="specialty.ativo"
+                    />
+                    <label class="form-check-label" for="ativo"> Ativo </label>
+                  </div>
+                  <!-- Submit button -->
+                  <div class="container botoes">
+                    <button type="submit" class="">Cadastrar</button>
+                    <button class="voltar" routerLink="/inicio/acessoRestrito">
+                      Voltar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

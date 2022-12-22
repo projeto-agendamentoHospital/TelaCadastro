@@ -26,18 +26,23 @@
 
 h1{
   padding-top: 40px;
-  padding-bottom: 45px;
+  padding-bottom: 35px;
   text-align: center;
   font-size: 55px;
   font-weight: 800;
   color: rgb(252, 248, 248);
   font-family: 'Ultra', serif;
 }
+.ac{
+  width: 90%;
+  margin-left: 5%;
+}
 button{
   border-radius: 25px;
   border: none;
   background-color: rgba(127, 216, 231, 0.651);
   margin-bottom: 1em;
+  padding: 0 10px 0 10px;
 }
 button:hover{
   background:linear-gradient(150deg,#f3942e 0%, #ff5100 100%);
@@ -60,10 +65,10 @@ button:hover{
 .link{
   font-family:'Raleway', sans-serif;
   text-align: center;
-  font-size: 25px;
+  font-size: 19px;
   font-weight: bold;
   justify-content: center;
-  width: 8em;
+  width: 7em;
   display: flex;
   text-decoration: none;
   color: rgb(8, 8, 8);
@@ -75,7 +80,7 @@ button:hover{
   border-radius: 15px;
   border: none;
   text-transform: uppercase;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: 25%;
 }
 .voltar:hover{
