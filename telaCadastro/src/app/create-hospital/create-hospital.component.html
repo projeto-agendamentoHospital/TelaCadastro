@@ -1,0 +1,72 @@
+<section class="intro">
+  <div>
+    <div class="mask d-flex align-items-center h-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1 class="mb-5 text-center">Cadastrar Hospital</h1>
+          <div class="col-12 col-lg-10">
+            <div class="card" style="border-radius: 1rem;">
+              <div class="card-body p-5">
+
+
+                <form action="" method="post" #frmCreate="ngForm" (ngSubmit)="toCreate(frmCreate)">
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row">
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="nomeHospital">Nome Hospital</label>
+                        <input type="text" id="nomeHospital" name="nomeHospital" class="form-control" [(ngModel)]="hospital.nome" required />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="cnpjHospital">CNPJ</label>
+                        <input type="text" id="cnpjHospital" name="cnpjHospital" class="form-control" [(ngModel)]="hospital.cnpj" required/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="telefone">Telefone</label>
+                        <input type="text" id="telefone" class="form-control" name="telefone" [(ngModel)]="hospital.telefone" required />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="cnes">CNES</label>
+                        <input type="text" id="cnes" name="cnes" class="form-control" [(ngModel)]="hospital.cnes" required />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Text input -->
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="enderecoHospital">Endereço</label>
+                    <input type="text" id="enderecoHospital" class="form-control" name="enderecoHospital" [(ngModel)]="hospital.endereco" required />
+                  </div>
+
+                  <div class="form-check d-flex  mb-4">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      value="true"
+                      id="ativo"
+                      checked
+                      [ngModelOptions]="{standalone: true}"
+                      [(ngModel)]="hospital.ativo"
+                    />
+                    <label class="form-check-label" for="ativo"> Ativo </label>
+                  </div>
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-secondary btn-rounded btn-block">Cadastrar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

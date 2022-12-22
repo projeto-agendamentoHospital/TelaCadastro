@@ -21,25 +21,6 @@ export class RestrictedAccessPatientComponent {
     this.setting = {};
   }
 
-  // toCreate(idHospital: number, idSpecialty: number, idProfessional: number, startDateHour: Date, finalDateHour: Date) {
-  //   console.log(`Adicionando registro com as seguintes informações:
-  //               IdHospital: ${idHospital},
-  //               IdEspecialidade: ${idSpecialty},
-  //               IdProfissional: ${idProfessional},
-  //               startDateHour: ${startDateHour},
-  //               finalDateHour: ${finalDateHour}
-  //               `);
-
-  // }
-
-  // toCreate(frm: FormGroup){
-  //   console.log(`Adicionando registro com as seguintes informações:
-  //   frm: ${frm}
-  //   `);
-  //   this.createSettingService.createSetting(this.setting).subscribe(response => {
-  //     this.listSettings.push(response);
-  //   })
-
   toCreate(frm: NgForm) {
     console.log(`Adicionando registro com as seguintes informações:
     frm: ${frm.value}

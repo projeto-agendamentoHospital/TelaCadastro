@@ -1,22 +1,95 @@
 <div class="first">
   <div class="form">
     <h1>Configurações</h1>
-    <div class="container botoes">
-      <button type="button" class="btn btn-primary btn-lg">
-        <a routerLink="/inicio/agendar" class="link"> Cadastrar Hospital</a>
-      </button>
-      <button type="button" class="btn btn-primary btn-lg">
-        <a routerLink="/inicio/consultarAgendamento" class="link"
-          >Cadastrar Especialidade</a
-        >
-      </button>
-      <button type="button" class="btn btn-primary btn-lg">
-        <a
-          routerLink="/inicio/acessoRestrito/cadastrarBeneficiario"
-          class="link"
-          >Cadastrar Beneficiário</a
-        >
-      </button>
-    </div>
-  </div>
-</div>
+
+    <ngb-accordion class="accordion">
+      <ngb-panel title="Cadastrar" class="accordion" >
+        <ng-template ngbPanelContent>
+          <div class="container botoes">
+            <button type="button" class="btn btn-primary btn-lg">
+              <a routerLink="/inicio/agendar" class="link" routerLink="/inicio/acessoRestrito/consultar/cadastrarHospital"> Cadastrar Hospital</a>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">
+              <a routerLink="/inicio/consultarAgendamento" class="link"
+                >Cadastrar Especialidade</a
+              >
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">
+              <a routerLink="/inicio/consultarAgendamento" class="link"
+                >Cadastrar Médico</a
+              >
+            </button>
+            <button type="button" class="btn btn-primary btn-lg" routerLink="/inicio/acessoRestrito/cadastrarBeneficiario">
+              <a
+                routerLink="/inicio/acessoRestrito/cadastrarBeneficiario"
+                class="link"
+                >Cadastrar Beneficiário</a
+              >
+            </button>
+          </div>
+        </ng-template>
+      </ngb-panel>
+    </ngb-accordion>
+
+
+<!-- ------------------------------------------------Listar-------------------------------------------------------- -->
+<ngb-accordion>
+  <ngb-panel title="Listar">
+    <ng-template ngbPanelContent>
+      <div class="container botoes">
+        <button type="button" class="btn btn-primary btn-lg">
+          <a routerLink="/inicio/agendar" class="link" routerLink="/inicio/consultarAgendamento">Listar Hospital</a>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg">
+          <a routerLink="/inicio/consultarAgendamento" class="link"
+            >Listar Especialidade</a
+          >
+        </button>
+        <button type="button" class="btn btn-primary btn-lg">
+          <a routerLink="/inicio/consultarAgendamento" class="link"
+            >Listar Médico</a
+          >
+        </button>
+        <button type="button" class="btn btn-primary btn-lg" routerLink="/inicio/acessoRestrito/cadastrarBeneficiario">
+          <a
+            routerLink="/inicio/acessoRestrito/cadastrarBeneficiario"
+            class="link"
+            >Listar Beneficiário</a
+          >
+        </button>
+      </div>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+
+<!-- ------------------------------------------------Deletar-------------------------------------------------------- -->
+<ngb-accordion>
+  <ngb-panel title="Deletar">
+    <ng-template ngbPanelContent>
+      <div class="container botoes">
+        <button type="button" class="btn btn-primary btn-lg">
+          <a routerLink="/inicio/agendar" class="link" routerLink="/inicio/consultarAgendamento">Deletar Hospital</a>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg">
+          <a routerLink="/inicio/consultarAgendamento" class="link"
+            >Deletar Especialidade</a
+          >
+        </button>
+        <button type="button" class="btn btn-primary btn-lg">
+          <a routerLink="/inicio/consultarAgendamento" class="link"
+            >Deletar Médico</a
+          >
+        </button>
+        <button type="button" class="btn btn-primary btn-lg" routerLink="/inicio/acessoRestrito/cadastrarBeneficiario">
+          <a
+            routerLink="/inicio/acessoRestrito/cadastrarBeneficiario"
+            class="link"
+            >Deletar Beneficiário</a
+          >
+        </button>
+      </div>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+<button class="voltar"  routerLink="/inicio">Voltar</button>
+

@@ -11,10 +11,11 @@
   width: auto;
   background-size: cover;
 }
+
 .form{
   justify-content: space-around;
   align-content: space-around;
-  background: #2b150ba6 ;
+  background: rgba(43, 21, 11, 0.651) ;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -22,9 +23,10 @@
   border-radius: 3%;
   padding: 5px;
 }
+
 h1{
-  padding-top: 135px;
-  padding-bottom: 95px;
+  padding-top: 40px;
+  padding-bottom: 45px;
   text-align: center;
   font-size: 55px;
   font-weight: 800;
@@ -34,10 +36,11 @@ h1{
 button{
   border-radius: 25px;
   border: none;
-  background-color: rgba(255, 235, 205, 0.5);
+  background-color: rgba(127, 216, 231, 0.651);
+  margin-bottom: 1em;
 }
 button:hover{
-  background-color: rgba(239, 183, 98, 0.5);
+  background:linear-gradient(150deg,#f3942e 0%, #ff5100 100%);
   box-shadow: 0px 0px 0px 2px rgb(63, 62, 62);
 }
 
@@ -51,6 +54,7 @@ button:hover{
   display: flex;
   justify-content:space-around;
   height: 7em;
+  padding: 1px;
 }
 
 .link{
@@ -59,8 +63,23 @@ button:hover{
   font-size: 25px;
   font-weight: bold;
   justify-content: center;
-  width: 12em;
+  width: 8em;
   display: flex;
   text-decoration: none;
   color: rgb(8, 8, 8);
+}
+.voltar{
+  background: linear-gradient(150deg,#f3942e 0%, #ff5100 100%);
+  width: 45%;
+  line-height: 40px;
+  border-radius: 15px;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-left: 25%;
+}
+.voltar:hover{
+  background: linear-gradient(150deg,#ff5100 0%, #f3942e 100%);
+  color: #dddcda;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.5);
 }

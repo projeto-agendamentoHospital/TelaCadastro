@@ -1,3 +1,4 @@
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,6 +13,8 @@ import { RestrictedAccessComponent } from './restricted-access/restricted-access
 import { RestrictedAccessPatientComponent } from './restricted-access-patient/restricted-access-patient.component';
 import { RestrictedAccessProfessionalComponent } from './restricted-access-professional/restricted-access-professional.component';
 import { RestrictedAccessConsultComponent } from './restricted-access-consult/restricted-access-consult.component';
+import { CreateHospitalComponent } from './create-hospital/create-hospital.component';
+
 
 @NgModule({
   declarations: [
@@ -22,13 +25,16 @@ import { RestrictedAccessConsultComponent } from './restricted-access-consult/re
     RestrictedAccessComponent,
     RestrictedAccessPatientComponent,
     RestrictedAccessProfessionalComponent,
-    RestrictedAccessConsultComponent
+    RestrictedAccessConsultComponent,
+    CreateHospitalComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

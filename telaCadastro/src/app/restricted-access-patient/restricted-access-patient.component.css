@@ -39,17 +39,20 @@ input{
 }
 button{
   background: linear-gradient(150deg,#f3942e 0%, #ff5100 100%);
-  width: 50%;
+  width: 45%;
   line-height: 40px;
   border-radius: 15px;
   border: none;
   text-transform: uppercase;
   margin-top: 5px;
-  margin-left: 25%;
 }
 input{
   background: rgba( 0,0,0,0.2);
   border: black;
+}
+.botoes{
+  display: flex;
+  justify-content: space-between;
 }
 button:hover{
   background: linear-gradient(150deg,#ff5100 0%, #f3942e 100%);

@@ -1,3 +1,4 @@
+import { CreateHospitalComponent } from './create-hospital/create-hospital.component';
 import { RestrictedAccessProfessionalComponent } from './restricted-access-professional/restricted-access-professional.component';
 import { RestrictedAccessPatientComponent } from './restricted-access-patient/restricted-access-patient.component';
 import { RestrictedAccessConsultComponent } from './restricted-access-consult/restricted-access-consult.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'inicio/consultarAgendamento', component: ConsultScheduleComponent},
   {path: 'inicio/acessoRestrito', component: RestrictedAccessComponent},
   {path: 'inicio/acessoRestrito/consultar', component: RestrictedAccessConsultComponent},
+  {path: 'inicio/acessoRestrito/consultar/cadastrarHospital', component: CreateHospitalComponent},
   {path: 'inicio/acessoRestrito/cadastrarBeneficiario', component: RestrictedAccessPatientComponent},
   {path: 'inicio/acessoRestrito/cadastrarProfissional', component: RestrictedAccessProfessionalComponent},
   {path: '**', redirectTo: 'inicio'},
