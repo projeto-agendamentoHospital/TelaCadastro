@@ -20,8 +20,8 @@ export class BeneficiarioCadastroService {
     return this.http.get(this.apiURL + `/Query/${id}`)
   }
 
-  removeSetting(id: number){
-    const URL = `${this.apiURL}/${id}`;
+  removeBeneficiary(id: number){
+    const URL = `https://localhost:7114/DeleteBeneficiary?id=${id}`;
     return this.http.delete(URL);
   }
 

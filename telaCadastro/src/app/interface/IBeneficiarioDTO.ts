@@ -1,5 +1,5 @@
 export interface IBeneficiarioDto{
-  id: number,
+  IdBeneficiary: number,
   name: string,
   cpf: string,
   phone: string,

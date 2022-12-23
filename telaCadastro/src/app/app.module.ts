@@ -17,6 +17,8 @@ import { CreateSettingComponent } from './create-setting/create-setting.componen
 import { CreateSpecialtyComponent } from './create-specialty/create-specialty.component';
 import { ListHospitalComponent } from './list-hospital/list-hospital.component';
 import { CreateProfessionalComponent } from './create-professional/create-professional.component';
+import { DeletePatientComponent } from './delete-patient/delete-patient.component';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { CreateProfessionalComponent } from './create-professional/create-profes
     CreateSpecialtyComponent,
     ListHospitalComponent,
     CreateProfessionalComponent,
+    DeletePatientComponent,
+
   ],
   imports: [
     BrowserModule,

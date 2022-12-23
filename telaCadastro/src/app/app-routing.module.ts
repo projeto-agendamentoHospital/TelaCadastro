@@ -11,6 +11,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateProfessionalComponent } from './create-professional/create-professional.component';
+import { DeletePatientComponent } from './delete-patient/delete-patient.component';
 
 const routes: Routes = [
   {path: '', component: FirstScreenComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'inicio/acessoRestrito/cadastrarBeneficiario', component: RestrictedAccessPatientComponent},
   {path: 'inicio/acessoRestrito/listarHospital', component: ListHospitalComponent},
   {path:'inicio/acessoRestrito/cadastrarProfissional',component: CreateProfessionalComponent},
+  {path: 'acessoRestrito/deletarBeneficiario', component: DeletePatientComponent},
   {path: '**', redirectTo: 'inicio'},
 ];
 
