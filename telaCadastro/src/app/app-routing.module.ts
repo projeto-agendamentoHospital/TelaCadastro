@@ -1,3 +1,5 @@
+import { ListProfessionalComponent } from './list-professional/list-professional.component';
+import { ListSpecialtyComponent } from './list-specialty/list-specialty.component';
 import { ListHospitalComponent } from './list-hospital/list-hospital.component';
 import { CreateSpecialtyComponent } from './create-specialty/create-specialty.component';
 import { CreateSettingComponent } from './create-setting/create-setting.component';
@@ -25,6 +27,9 @@ const routes: Routes = [
   {path: 'inicio/acessoRestrito/cadastrarEspecialidade', component: CreateSpecialtyComponent},
   {path: 'inicio/acessoRestrito/cadastrarBeneficiario', component: RestrictedAccessPatientComponent},
   {path: 'inicio/acessoRestrito/listarHospital', component: ListHospitalComponent},
+  {path: 'inicio/acessoRestrito/listarEspecialidade', component: ListSpecialtyComponent},
+  {path: 'inicio/acessoRestrito/listarProfissionais', component: ListProfessionalComponent},
+  {path: 'inicio/acessoRestrito/listarBeneficiario', component: RestrictedAccessPatientComponent},
   {path:'inicio/acessoRestrito/cadastrarProfissional',component: CreateProfessionalComponent},
   {path: 'acessoRestrito/deletarBeneficiario', component: DeletePatientComponent},
   {path: '**', redirectTo: 'inicio'},

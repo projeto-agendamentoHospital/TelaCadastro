@@ -18,6 +18,8 @@ import { CreateSpecialtyComponent } from './create-specialty/create-specialty.co
 import { ListHospitalComponent } from './list-hospital/list-hospital.component';
 import { CreateProfessionalComponent } from './create-professional/create-professional.component';
 import { DeletePatientComponent } from './delete-patient/delete-patient.component';
+import { ListSpecialtyComponent } from './list-specialty/list-specialty.component';
+import { ListProfessionalComponent } from './list-professional/list-professional.component';
 
 
 @NgModule({
@@ -35,6 +37,8 @@ import { DeletePatientComponent } from './delete-patient/delete-patient.componen
     ListHospitalComponent,
     CreateProfessionalComponent,
     DeletePatientComponent,
+    ListSpecialtyComponent,
+    ListProfessionalComponent,
 
   ],
   imports: [

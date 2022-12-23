@@ -11,8 +11,8 @@
                   <th scope="col" rowspan="3">Endereço</th>
                   <th scope="col" rowspan="2">Telefone</th>
                   <th scope="col" colspan="1">Numero da Carterinha</th>
-                  <th scope="col" colspan="2">Email</th>
-                  <th scope="col" colspan="2">Ativo</th>
+                  <th scope="col" colspan="">Email</th>
+                  <th scope="col" colspan="">Ativo</th>
 
                   <!-- <th scope="col" colspan="">##</th> -->
 
@@ -20,18 +20,14 @@
           </thead>
           <tbody class="table-light  align-middle">
               <tr *ngFor="let hospital of listSettings">
-                  <th >{{hospital.name}}</th>
+                  <td >{{hospital.name}}</td>
                   <td>{{hospital.cpf}}</td>
                   <td>{{hospital.address}}</td>
                   <td>{{hospital.phone}}</td>
-                  <td>{{hospital.email}}</td>
                   <td>{{hospital.numberCard}}</td>
-                  <td>{{hospital.active ? "Sim" : "Não"}}</td>
-                  <td>
-                      <button  (click)="delete(hospital.idBeneficiary)">Delete</button>
+                  <td>{{hospital.email}}</td>
 
-                      <!-- <button class="btn btn-primary" (click)="edit(hospital.idHospital)">Editar</button> -->
-                  </td>
+                  <td>{{hospital.active ? "Sim" : "Não"}}</td>
               </tr>
           </tbody>
       </table>

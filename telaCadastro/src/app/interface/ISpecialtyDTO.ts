@@ -1,6 +1,6 @@
 export interface ISpecialtyDTO{
-  idSpecialty : number,
-  Name: string,
-  Description: string,
-  Status: boolean
+  idEspecialidade : number,
+  nome: string,
+  descricao: string,
+  ativo: boolean
 }
