@@ -26,7 +26,7 @@
           <div class="col-12 col-lg-10 ">
             <div class="card  form">
               <div class="card-body">
-                <form action="" method="post" #frmCreate="ngForm">
+                <form action="" method="post" #frm="ngForm">
                   <!-- 2 column grid layout with text inputs for the first and last names -->
                   <div class="row">
                     <div class="row col-12 col-md-6 ">
@@ -39,7 +39,7 @@
                   </div>
                   <!-- Submit button -->
                   <div class="container botoes">
-                  <button type="submit" class="">Cadastrar</button>
+                  <button type="submit" [disabled]="frm.invalid" (click)="toDelete(IdBeneficiary)">Excluir Beneficiário</button>
                   <button class="voltar"  routerLink="/inicio/acessoRestrito">Voltar</button>
                 </div>
                 </form>

@@ -19,16 +19,16 @@ export class RestrictedAccessPatientComponent {
 
   ngOnInit() {
     this.setting = {};
-    
+
     this.createSettingService.getAll().subscribe(response => {
       this.listSettings = response ;
       console.log("lista antes");
       console.log(this.listSettings);
     });
-    
+
   }
 
   delete( id : number) {
-    this.createSettingService.removeSetting(id);
+    this.createSettingService.removeBeneficiary(id);
   }
 }

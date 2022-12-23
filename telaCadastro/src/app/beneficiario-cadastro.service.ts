@@ -26,6 +26,7 @@ export class BeneficiarioCadastroService {
 
   removeBeneficiary(id: number){
     const URL = `https://localhost:7114/DeleteBeneficiary?id=${id}`;
+    return this.http.delete(URL);
   }
 
   createSetting(setting: any){
