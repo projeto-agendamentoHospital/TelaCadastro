@@ -1,130 +1,129 @@
-<div
-  class="d-flex flex-column bg-blue justify-content-center text-center text-white"
-  style="min-height: 25vh"
->
+<!-- <div class="d-flex flex-column bg-blue justify-content-center text-center text-white full-banner-form"
+  style="min-height: 25vh">
   <div class="text-center">
-    <h2 class="display-6 text-white mt-3">Criar Configuração</h2>
+    <h1 class="display-6 text-white mt-3">Criar Configuração</h1>
   </div>
-  <form
-    action=""
-    method="post"
-    #frmCreate="ngForm"
-    (ngSubmit)="toCreate(frmCreate)"
-  >
-    <div class="input-group mt-4 d-flex justify-content-center">
-      <div class="input-group-prepend">
-        <span
-          class="input-group-text d-flex justify-content-center"
-          id="basic-addon1"
-          style="width: 10em"
-          ><b>ID Hospital</b></span
-        >
+  <form action="" method="post" #frmCreate="ngForm" (ngSubmit)="toCreate(frmCreate)">
+    <div class="form">
+      <div class="input-group mt-4 d-flex justify-content-center ">
+        <div class="input-group-prepend">
+          <span class="input-group-text d-flex justify-content-center" id="basic-addon1" style="width: 10em"><b>ID
+              Hospital</b></span>
+        </div>
+        <input type="number" class="form-control rounded-end" id="idHospital" name="idHospital" style="max-width: 20%"
+          placeholder="Insira o ID do Hospital" aria-describedby="basic-addon1" [(ngModel)]="setting.idHospital"
+          required /><br />
       </div>
-      <input
-        type="number"
-        class="form-control rounded-end"
-        id="idHospital"
-        name="idHospital"
-        style="max-width: 20%"
-        placeholder="Insira o ID do Hospital"
-        aria-describedby="basic-addon1"
-        [(ngModel)]="setting.idHospital"
-        required
-      /><br />
-    </div>
-    <div class="input-group mt-3 d-flex justify-content-center">
-      <div class="input-group-prepend">
-        <span
-          class="input-group-text d-flex justify-content-center"
-          id="basic-addon1"
-          style="width: 10em"
-          ><b>ID Especialidade</b></span
-        >
+      <div class="input-group mt-3 d-flex justify-content-center">
+        <div class="input-group-prepend">
+          <span class="input-group-text d-flex justify-content-center" id="basic-addon1" style="width: 10em"><b>ID
+              Especialidade</b></span>
+        </div>
+        <input type="number" class="form-control rounded-end" id="idSpecialty" name="idSpecialty" style="max-width: 20%"
+          placeholder="Insira o ID da Especialidade" aria-describedby="basic-addon1" [(ngModel)]="setting.idSpecialty"
+          required /><br />
       </div>
-      <input
-        type="number"
-        class="form-control rounded-end"
-        id="idSpecialty"
-        name="idSpecialty"
-        style="max-width: 20%"
-        placeholder="Insira o ID da Especialidade"
-        aria-describedby="basic-addon1"
-        [(ngModel)]="setting.idSpecialty"
-        required
-      /><br />
-    </div>
-    <div class="input-group mt-3 d-flex justify-content-center">
-      <div class="input-group-prepend">
-        <span
-          class="input-group-text d-flex justify-content-center"
-          id="basic-addon1"
-          style="width: 10em"
-          ><b>ID Profissional</b></span
-        >
+      <div class="input-group mt-3 d-flex justify-content-center">
+        <div class="input-group-prepend">
+          <span class="input-group-text d-flex justify-content-center" id="basic-addon1" style="width: 10em"><b>ID
+              Profissional</b></span>
+        </div>
+        <input type="number" class="form-control rounded-end" id="idProfessional" name="idProfessional"
+          style="max-width: 20%" placeholder="Insira o ID do Profissional" aria-describedby="basic-addon1"
+          [(ngModel)]="setting.idProfessional" required /><br />
       </div>
-      <input
-        type="number"
-        class="form-control rounded-end"
-        id="idProfessional"
-        name="idProfessional"
-        style="max-width: 20%"
-        placeholder="Insira o ID do Profissional"
-        aria-describedby="basic-addon1"
-        [(ngModel)]="setting.idProfessional"
-        required
-      /><br />
-    </div>
-    <div class="input-group mt-3 d-flex justify-content-center">
-      <div class="input-group-prepend">
-        <span
-          class="input-group-text d-flex justify-content-center"
-          id="basic-addon1"
-          style="width: 10em"
-          ><b>Ínicio do Plantão</b></span
-        >
+      <div class="input-group mt-3 d-flex justify-content-center">
+        <div class="input-group-prepend">
+          <span class="input-group-text d-flex justify-content-center" id="basic-addon1" style="width: 10em"><b>Ínicio
+              do Plantão</b></span>
+        </div>
+        <input type="datetime-local" class="form-control rounded-end" id="startDateHour" name="startDateHour"
+          style="max-width: 20%" placeholder="Insira o horário de ínicio do Plantão" [(ngModel)]="setting.startDateHour"
+          aria-describedby="basic-addon1" required /><br />
       </div>
-      <input
-        type="datetime-local"
-        class="form-control rounded-end"
-        id="startDateHour"
-        name="startDateHour"
-        style="max-width: 20%"
-        placeholder="Insira o horário de ínicio do Plantão"
-        [(ngModel)]="setting.startDateHour"
-        aria-describedby="basic-addon1"
-        required
-      /><br />
-    </div>
-    <div class="input-group mt-3 mb-5 d-flex justify-content-center">
-      <div class="input-group-prepend">
-        <span
-          class="input-group-text d-flex justify-content-center"
-          id="basic-addon1"
-          style="width: 10em"
-          ><b>Final do Plantão</b></span
-        >
+      <div class="input-group mt-3 mb-5 d-flex justify-content-center">
+        <div class="input-group-prepend">
+          <span class="input-group-text d-flex justify-content-center" id="basic-addon1" style="width: 10em"><b>Final do
+              Plantão</b></span>
+        </div>
+        <input type="datetime-local" class="form-control rounded-end" id="finalDateHour" name="finalDateHour"
+          style="max-width: 20%" placeholder="Insira o horário final do plantão" aria-describedby="basic-addon1"
+          [(ngModel)]="setting.finalDateHour" required /><br />
       </div>
-      <input
-        type="datetime-local"
-        class="form-control rounded-end"
-        id="finalDateHour"
-        name="finalDateHour"
-        style="max-width: 20%"
-        placeholder="Insira o horário final do plantão"
-        aria-describedby="basic-addon1"
-        [(ngModel)]="setting.finalDateHour"
-        required
-      /><br />
+      <button type="submit" class="btn btn-success mb-3 col-3" [disabled]="frmCreate.invalid">
+        Salvar</button><br />
+      <a routerLink="/inicio/acessoRestrito" class="btn btn-secondary col-3 mb-5">Voltar</a>
     </div>
-    <button
-      type="submit"
-      class="btn btn-success mb-3 col-3"
-      [disabled]="frmCreate.invalid"
-    >
-      Salvar</button
-    ><br />
-    <a routerLink="/ScheduleSettings" class="btn btn-secondary col-3 mb-5"
-      >Voltar</a
-    >
   </form>
-</div>
+</div> -->
+
+<!-- //////////////////////////////////////////////////////////////// -->
+<section class="intro full-banner-form">
+  <div>
+    <div class="mask d-flex align-items-center h-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1 class="mb-5 text-center">Criar Configuração</h1>
+          <div class="col-12 col-lg-10">
+            <div class="card form">
+              <div class="card-body">
+                <form action="" method="post" #frmCreate="ngForm" (ngSubmit)="toCreate(frmCreate)">
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="nomeSpecialty">ID Hospital</label>
+                        <input type="text" id="nomeSpecialty" name="nomeSpecialty" class="form-control"
+                          [(ngModel)]="setting.idHospital" required />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="cnpjSpecialty">ID Especialidade</label>
+                        <input type="text" id="descricaoSpecialty" name="descricaoSpecialty" class="form-control"
+                          [(ngModel)]="setting.idSpecialty" required />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="cnpjSpecialty">ID Profissional</label>
+                        <input type="text" id="descricaoSpecialty" name="descricaoSpecialty" class="form-control"
+                          [(ngModel)]="setting.idProfessional" required />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="cnpjSpecialty">Inicio do plantão</label>
+                        <input type="datetime-local" class="form-control rounded-end" id="startDateHour"
+                          name="startDateHour" style="max-width: 40%"
+                          placeholder="Insira o horário de ínicio do Plantão" [(ngModel)]="setting.startDateHour"
+                          aria-describedby="basic-addon1" required />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="cnpjSpecialty">Final do plantão</label>
+                        <input type="datetime-local" class="form-control rounded-end" id="finalDateHour"
+                          name="finalDateHour" style="max-width: 40%" placeholder="Insira o horário final do plantão"
+                          aria-describedby="basic-addon1" [(ngModel)]="setting.finalDateHour" required />
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Submit button -->
+                  <div class="container botoes">
+                    <button type="submit" [disabled]="frmCreate.invalid">
+                      Salvar</button>
+                    <button class="voltar" routerLink="/inicio/acessoRestrito">
+                      Voltar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
