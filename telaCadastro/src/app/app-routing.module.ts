@@ -23,7 +23,7 @@ const routes: Routes = [
   {path: 'inicio/acessoRestrito/consultar', component: RestrictedAccessConsultComponent},
   {path: 'inicio/acessoRestrito/cadastrarHospital', component: CreateHospitalComponent},
   {path: 'inicio/acessoRestrito/cadastrarEspecialidade', component: CreateSpecialtyComponent},
-  {path: 'inicio/acessoRestrito/cadastrarBeneficiario', component: RestrictedAccessPatientComponent},
+  {path: 'inicio/acessoRestrito/listarBeneficiario', component: RestrictedAccessPatientComponent},
   {path: 'inicio/acessoRestrito/listarHospital', component: ListHospitalComponent},
   {path:'inicio/acessoRestrito/cadastrarProfissional',component: CreateProfessionalComponent},
   {path: 'acessoRestrito/deletarBeneficiario', component: DeletePatientComponent},

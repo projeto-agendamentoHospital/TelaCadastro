@@ -19,16 +19,16 @@
               </tr>
           </thead>
           <tbody class="table-light  align-middle">
-              <tr *ngFor="let hospital of listSettings">
-                  <th >{{hospital.name}}</th>
-                  <td>{{hospital.cpf}}</td>
-                  <td>{{hospital.address}}</td>
-                  <td>{{hospital.phone}}</td>
-                  <td>{{hospital.email}}</td>
-                  <td>{{hospital.numberCard}}</td>
-                  <td>{{hospital.active ? "Sim" : "Não"}}</td>
+              <tr *ngFor="let item of listBeneficiary">
+                  <th >{{item.name}}</th>
+                  <td>{{item.cpf}}</td>
+                  <td>{{item.address}}</td>
+                  <td>{{item.phone}}</td>
+                  <td>{{item.email}}</td>
+                  <td>{{item.numberCard}}</td>
+                  <td>{{item.active ? "Sim" : "Não"}}</td>
                   <td>
-                      <button  (click)="delete(hospital.idBeneficiary)">Delete</button>
+                      <button  (click)="delete(item.IdBeneficiario)">Delete</button>
 
                       <!-- <button class="btn btn-primary" (click)="edit(hospital.idHospital)">Editar</button> -->
                   </td>
