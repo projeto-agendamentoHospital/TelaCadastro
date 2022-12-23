@@ -9,16 +9,16 @@ import { RestrictedAccessConsultComponent } from './restricted-access-consult/re
 import {FirstScreenComponent} from './first-screen/first-screen.component'
 import { ConsultScheduleComponent } from './consult-schedule/consult-schedule.component';
 import { RestrictedAccessComponent } from './restricted-access/restricted-access.component';
-import { ScheduleComponent } from './schedule/schedule.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateProfessionalComponent } from './create-professional/create-professional.component';
 import { DeletePatientComponent } from './delete-patient/delete-patient.component';
+import { CreateScheduleComponent } from './create-schedule/create-schedule.component';
 
 const routes: Routes = [
   {path: '', component: FirstScreenComponent},
   {path: 'inicio', component: FirstScreenComponent},
-  {path: 'inicio/agendar', component: ScheduleComponent},
+  {path: 'inicio/criarAgendamento', component: CreateScheduleComponent},
   {path: 'inicio/consultarAgendamento', component: ConsultScheduleComponent},
   {path: 'inicio/acessoRestrito', component: RestrictedAccessComponent},
   {path: 'inicio/acessoRestrito/adicionarAgenda', component: CreateSettingComponent},
