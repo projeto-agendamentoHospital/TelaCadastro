@@ -22,6 +22,9 @@ import { DeletePatientComponent } from './delete-patient/delete-patient.componen
 import { ListSpecialtyComponent } from './list-specialty/list-specialty.component';
 import { ListProfessionalComponent } from './list-professional/list-professional.component';
 import { CreateScheduleComponent } from './create-schedule/create-schedule.component';
+import { DeleteHospitalComponent } from './delete-hospital/delete-hospital.component';
+import { DeleteEspecialidadeComponent } from './delete-especialidade/delete-especialidade.component';
+import { DeleteProfessionalComponent } from './delete-professional/delete-professional.component';
 
 
 @NgModule({
@@ -42,6 +45,9 @@ import { CreateScheduleComponent } from './create-schedule/create-schedule.compo
     ListSpecialtyComponent,
     ListProfessionalComponent,
     CreateScheduleComponent,
+    DeleteHospitalComponent,
+    DeleteEspecialidadeComponent,
+    DeleteProfessionalComponent,
 
   ],
   imports: [

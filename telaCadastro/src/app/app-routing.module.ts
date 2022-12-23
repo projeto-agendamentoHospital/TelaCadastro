@@ -14,6 +14,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { CreateProfessionalComponent } from './create-professional/create-professional.component';
 import { DeletePatientComponent } from './delete-patient/delete-patient.component';
 import { CreateScheduleComponent } from './create-schedule/create-schedule.component';
+import { DeleteHospitalComponent } from './delete-hospital/delete-hospital.component';
+import { DeleteEspecialidadeComponent } from './delete-especialidade/delete-especialidade.component';
 
 
 const routes: Routes = [
@@ -26,13 +28,15 @@ const routes: Routes = [
   {path: 'inicio/acessoRestrito/consultar', component: RestrictedAccessConsultComponent},
   {path: 'inicio/acessoRestrito/cadastrarHospital', component: CreateHospitalComponent},
   {path: 'inicio/acessoRestrito/cadastrarEspecialidade', component: CreateSpecialtyComponent},
-  {path: 'inicio/acessoRestrito/listarBeneficiario', component: RestrictedAccessPatientComponent},
+  {path: 'inicio/acessoRestrito/cadastrarBeneficiario', component: RestrictedAccessConsultComponent},
   {path: 'inicio/acessoRestrito/listarHospital', component: ListHospitalComponent},
   {path: 'inicio/acessoRestrito/listarEspecialidade', component: ListSpecialtyComponent},
   {path: 'inicio/acessoRestrito/listarProfissionais', component: ListProfessionalComponent},
   {path: 'inicio/acessoRestrito/listarBeneficiario', component: RestrictedAccessPatientComponent},
   {path:'inicio/acessoRestrito/cadastrarProfissional',component: CreateProfessionalComponent},
-  {path: 'acessoRestrito/deletarBeneficiario', component: DeletePatientComponent},
+  {path: 'inicio/acessoRestrito/deletarBeneficiario', component: DeletePatientComponent},
+  {path: 'inicio/acessoRestrito/deletarHospital', component: DeleteHospitalComponent},
+  {path: 'inicio/acessoRestrito/deletarEspecialidade', component: DeleteEspecialidadeComponent},
   {path: '**', redirectTo: 'inicio'},
 ];
 

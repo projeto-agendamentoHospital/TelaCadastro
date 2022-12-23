@@ -3,7 +3,7 @@
     <div class="mask d-flex align-items-center h-100">
       <div class="container">
         <div class="row justify-content-center">
-          <h1 class="mb-5 text-center">Deletar Beneficiário</h1>
+          <h1 class="mb-5 text-center">Deletar Hospital</h1>
           <div class="col-12 col-lg-10 ">
             <div class="card  form">
               <div class="card-body">
@@ -13,24 +13,26 @@
                     <div class="row col-12 col-md-6 ">
                       <div class="form-outline d-flex">
                         <label class="form-label" for="nomeHospital">ID</label>
-                        <input type="text" id="nomeHospital" name="nomeHospital" class="form-control" [(ngModel)]="IdBeneficiary" required />
+                        <input type="text" id="nomeHospital" name="nomeHospital" class="form-control"  required />
                       </div>
                     </div>
 
                   </div>
                   <!-- Submit button -->
                   <div class="container botoes">
-                  <button type="submit" [disabled]="frm.invalid" (click)="toDelete(IdBeneficiary)">Excluir Beneficiário</button>
+                  <button type="submit" [disabled]="frm.invalid">Excluir Hospital</button>
                   <button class="voltar"  routerLink="/inicio/acessoRestrito">Voltar</button>
                 </div>
                 </form>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
