@@ -11,8 +11,8 @@
                   <th scope="col" rowspan="3">Endereço</th>
                   <th scope="col" rowspan="2">Telefone</th>
                   <th scope="col" colspan="1">Numero da Carterinha</th>
-                  <th scope="col" colspan="2">Email</th>
-                  <th scope="col" colspan="2">Ativo</th>
+                  <th scope="col" colspan="">Email</th>
+                  <th scope="col" colspan="">Ativo</th>
 
                   <!-- <th scope="col" colspan="">##</th> -->
 
@@ -29,9 +29,6 @@
                   <td>{{item.active ? "Sim" : "Não"}}</td>
                   <td>
                       <button  (click)="delete(item.IdBeneficiario)">Delete</button>
-
-                      <!-- <button class="btn btn-primary" (click)="edit(hospital.idHospital)">Editar</button> -->
-                  </td>
               </tr>
           </tbody>
       </table>

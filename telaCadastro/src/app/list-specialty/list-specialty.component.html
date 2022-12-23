@@ -1,0 +1,31 @@
+<main class="pb-3 full-banner-form">
+  <section class="container text-center">
+    <div class="text-center">
+      <h1 class="display-6 mt-3">Lista de Especialidades</h1>
+    </div>
+    <table class="table table-hover table-striped mt-4 align-middle mb-5">
+      <thead>
+        <tr
+          class="table-light align-middle"
+        >
+          <th scope="col" rowspan="2">ID Especialidade</th>
+          <th scope="col" rowspan="2">Nome</th>
+          <th scope="col" rowspan="2">Descrição</th>
+          <th scope="col" rowspan="2">Ativo</th>
+        </tr>
+      </thead>
+      <tbody class="table-light  align-middle">
+        <tr *ngFor="let specialty of listingAllSpecialty">
+
+          <td>{{ specialty.idEspecialidade }}</td>
+          <td>{{ specialty.nome }}</td>
+          <td>{{ specialty.descricao }}</td>
+          <td>
+            {{ specialty.ativo ? "Sim" : "Não" }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="voltar" routerLink="/inicio/acessoRestrito">Voltar</button>
+  </section>
+</main>

@@ -4,24 +4,27 @@ import { ISpecialtyDTO } from './interface/ISpecialtyDTO';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SpecialtyService {
   private apiURL = 'https://localhost:7114/CreateSpecialty';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  registerSpecilty(especialty: any){
+  registerSpecilty(especialty: any) {
     return this.http.post(this.apiURL, especialty);
   }
 
-
   getAll(): Observable<ISpecialtyDTO[]> {
-    return this.http.get<ISpecialtyDTO[]>("https://localhost:7114/GetList");
+    return this.http.get<ISpecialtyDTO[]>('https://localhost:7114/GetList');
   }
 
-  updateSetting(specialty: any){
-    return this.http.put(this.apiURL, specialty)
+  updateSpecialty(specialty: any) {
+    return this.http.patch('https://localhost:7114/UpdateSpecialty', specialty);
   }
-
+  removeSpecialista(id: number) {
+    const URL = `https://localhost:7114/DeleteSpecialty/${id}`;
+    return this.http.delete(URL);
+  }
 }
+
