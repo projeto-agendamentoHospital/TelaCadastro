@@ -1,113 +1,42 @@
-<div class="full-banner-form">
-  <form
-    action=""
-    method="post"
-    #frmCreate="ngForm"
-    (ngSubmit)="toCreate(frmCreate)"
-  >
-    <h1>Cadastrar Beneficiário</h1>
-    <div class="container">
-      <div class="mb-3 row">
-        <label class="col-sm-4 col-form-label">Nome do Beneficiário</label>
-        <div class="col-sm-6">
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            [(ngModel)]="setting.name"
-            name="name"
-          />
-        </div>
+<main class="pb-3 full-banner-form">
+  <section class="container text-center">
+      <div class="text-center">
+          <h1 class="display-6 mt-3">Lista de Beneficiários</h1>
       </div>
-      <div class="mb-3 row">
-        <label class="col-sm-4 col-form-label">CPF</label>
-        <div class="col-sm-6">
-          <input
-            type="text"
-            class="form-control"
-            id="cpf"
-            [(ngModel)]="setting.cpf"
-            name="cpf"
-          />
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label class="col-sm-4 col-form-label">Telefone</label>
-        <div class="col-sm-6">
-          <input
-            type="text"
-            class="form-control"
-            id="phone"
-            [(ngModel)]="setting.phone"
-            name="phone"
-          />
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label class="col-sm-4 col-form-label">Endereço</label>
-        <div class="col-sm-6">
-          <input
-            type="text"
-            class="form-control"
-            id="address"
-            [(ngModel)]="setting.address"
-            name="address"
-          />
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label class="col-sm-4 col-form-label">Número da Carteirinha</label>
-        <div class="col-sm-6">
-          <input
-            type="text"
-            class="form-control"
-            id="numberCard"
-            [(ngModel)]="setting.numberCard"
-            name="numberCard"
-          />
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label class="col-sm-4 col-form-label">Email</label>
-        <div class="col-sm-6">
-          <input
-            type="text"
-            class="form-control"
-            id="email"
-            [(ngModel)]="setting.email"
-            name="email"
-          />
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label class="col-sm-4 col-form-label">Senha</label>
-        <div class="col-sm-6">
-          <input
-            type="password"
-            class="form-control"
-            id="password"
-            [(ngModel)]="setting.password"
-            name="password"
-          />
-        </div>
-      </div>
-      <div class="row-2 col-sm-2">
-        <div class="form-check d-flex mb-4">
-          <input
-            class="form-check-input me-2"
-            type="checkbox"
-            value="true"
-            id="ativo"
-            checked
-            [ngModelOptions]="{ standalone: true }"
-            [(ngModel)]="setting.ativo"/>
-          <label class="form-check-label" for="ativo"> Ativo </label>
-        </div>
-      </div>
-      <div class="container botoes">
-      <button [disabled]="frmCreate.invalid">Salvar</button>
-      <button class="voltar"  routerLink="/inicio/acessoRestrito">Voltar</button>
-    </div>
-    </div>
-  </form>
-</div>
+      <table class="table table-hover  table-striped mt-4 align-middle mb-5">
+          <thead>
+              <tr class="table-light align-middle">
+                  <th scope="col" rowspan="3">Nome</th>
+                  <th scope="col" rowspan="2">CPF</th>
+                  <th scope="col" rowspan="3">Endereço</th>
+                  <th scope="col" rowspan="2">Telefone</th>
+                  <th scope="col" colspan="1">Numero da Carterinha</th>
+                  <th scope="col" colspan="2">Email</th>
+                  <th scope="col" colspan="2">Ativo</th>
+
+                  <!-- <th scope="col" colspan="">##</th> -->
+
+              </tr>
+          </thead>
+          <tbody class="table-light  align-middle">
+              <tr *ngFor="let hospital of listSettings">
+                  <th >{{hospital.name}}</th>
+                  <td>{{hospital.cpf}}</td>
+                  <td>{{hospital.address}}</td>
+                  <td>{{hospital.phone}}</td>
+                  <td>{{hospital.email}}</td>
+                  <td>{{hospital.numberCard}}</td>
+                  <td>{{hospital.active ? "Sim" : "Não"}}</td>
+                  <td>
+                      <button  (click)="delete(hospital.idBeneficiary)">Delete</button>
+
+                      <!-- <button class="btn btn-primary" (click)="edit(hospital.idHospital)">Editar</button> -->
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      <button class="voltar" routerLink="/inicio/acessoRestrito">
+        Voltar
+      </button>
+  </section>
+</main>

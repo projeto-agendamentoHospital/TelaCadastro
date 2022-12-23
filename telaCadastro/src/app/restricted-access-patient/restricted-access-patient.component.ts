@@ -19,17 +19,16 @@ export class RestrictedAccessPatientComponent {
 
   ngOnInit() {
     this.setting = {};
+    
+    this.createSettingService.getAll().subscribe(response => {
+      this.listSettings = response ;
+      console.log("lista antes");
+      console.log(this.listSettings);
+    });
+    
   }
 
-  toCreate(frm: NgForm) {
-    console.log(`Adicionando registro com as seguintes informações:
-    frm: ${frm.value}
-    `);
-    this.createSettingService.createSetting(this.setting).subscribe(response => {
-      this.listSettings.push(response);
-      frm.reset();
-      this.router.navigate(['/ScheduleSettings']);
-      alert("Configuração cadastrada com sucesso!✅");
-    });
+  delete( id : number) {
+    this.createSettingService.removeSetting(id);
   }
 }
