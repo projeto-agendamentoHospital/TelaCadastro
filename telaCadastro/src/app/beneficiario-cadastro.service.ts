@@ -13,7 +13,7 @@ export class BeneficiarioCadastroService {
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<IBeneficiarioDto[]> { // observa se ocorre da maneira correta
-    return this.http.get<IBeneficiarioDto[]>(this.apiURL);
+    return this.http.get<IBeneficiarioDto[]>("https://localhost:7114/Beneficiary");
   }
 
   getSetting(id: number){
