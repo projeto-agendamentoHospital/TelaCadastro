@@ -1,3 +1,4 @@
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -20,6 +21,7 @@ import { CreateProfessionalComponent } from './create-professional/create-profes
 import { DeletePatientComponent } from './delete-patient/delete-patient.component';
 import { ListSpecialtyComponent } from './list-specialty/list-specialty.component';
 import { ListProfessionalComponent } from './list-professional/list-professional.component';
+import { CreateScheduleComponent } from './create-schedule/create-schedule.component';
 
 
 @NgModule({
@@ -39,6 +41,7 @@ import { ListProfessionalComponent } from './list-professional/list-professional
     DeletePatientComponent,
     ListSpecialtyComponent,
     ListProfessionalComponent,
+    CreateScheduleComponent,
 
   ],
   imports: [

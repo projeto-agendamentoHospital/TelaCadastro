@@ -15,6 +15,7 @@ import { CreateProfessionalComponent } from './create-professional/create-profes
 import { DeletePatientComponent } from './delete-patient/delete-patient.component';
 import { CreateScheduleComponent } from './create-schedule/create-schedule.component';
 
+
 const routes: Routes = [
   {path: '', component: FirstScreenComponent},
   {path: 'inicio', component: FirstScreenComponent},
